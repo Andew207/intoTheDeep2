@@ -45,7 +45,7 @@ import com.qualcomm.robotcore.util.Range;
 
 @TeleOp(name="Kypten's Dumb Layout The First", group="Linear Opmode")
 public class CamdensDumbLayoutTheThird extends LinearOpMode {
-
+    
     // Declare OpMode objects
     private final ElapsedTime runtime = new ElapsedTime();
 
