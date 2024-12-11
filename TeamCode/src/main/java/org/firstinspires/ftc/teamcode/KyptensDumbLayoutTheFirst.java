@@ -44,7 +44,7 @@ import com.qualcomm.robotcore.util.Range;
 
 
 @TeleOp(name="Kypten's Dumb Layout The First", group="Linear Opmode")
-public class CamdensDumbLayoutTheThird extends LinearOpMode {
+public class KyptensDumbLayoutTheFirst extends LinearOpMode {
 
     // Declare OpMode objects
     private final ElapsedTime runtime = new ElapsedTime();
@@ -186,7 +186,7 @@ public class CamdensDumbLayoutTheThird extends LinearOpMode {
             inOutRight.setPower(1);
             inOutLeft.setPower(1);
 
-            armSwing.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+            //armSwing.setMode(DcMotor.RunMode.RUN_TO_POSITION);
             inOutRight.setMode(DcMotor.RunMode.RUN_TO_POSITION);
             inOutLeft.setMode(DcMotor.RunMode.RUN_TO_POSITION);
 
@@ -227,6 +227,7 @@ public class CamdensDumbLayoutTheThird extends LinearOpMode {
             telemetry.addData("target pos var", inOutPosition);
             telemetry.addData("left pos", inOutLeft.getCurrentPosition());
             telemetry.addData("right pos", inOutRight.getCurrentPosition());
+            telemetry.addData("Arm Swing", armSwing.getCurrentPosition());
 
             telemetry.addData("FL Power", frontLeftPower);
             telemetry.addData("FR Power", frontRightPower);
