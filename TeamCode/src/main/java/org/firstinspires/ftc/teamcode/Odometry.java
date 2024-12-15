@@ -195,9 +195,6 @@ public class Odometry extends LinearOpMode {
 
         waitForStart();
         if (isStopRequested()) return;
-        //TODO: Change the followed trajectory to match its position on the field
-        // Note that the left/right part of the trajectories is based on the side that you are
-        // facing, as in "blueleft" is across from "redright". (see lines 95-109)
         drive.followTrajectory(auto);
         drive.followTrajectory(strafe);
         drive.followTrajectory(back);
